@@ -9,10 +9,8 @@ public class LightController : MonoBehaviour
     int randomInt;
 
     [SerializeField]
-    GameObject[] playerLights;
+    GameObject[] Lights;
 
-    [SerializeField]
-    GameObject[] enemyLights;
 
     [SerializeField]
     float time;
@@ -22,11 +20,21 @@ public class LightController : MonoBehaviour
 
     [SerializeField]
     int placeHolder = 5;
+
+    [SerializeField]
+    int counter;
+
+    [SerializeField]
+    int holder;
+    [SerializeField]
+    EnemyControllerMusicLevel[] enemy;
+    
     // Start is called before the first frame update
     void Start()
     {
-        randomInt = Random.Range(0, playerLights.Length);
-
+        randomInt = Random.Range(0, Lights.Length);
+        holder = randomInt;
+        enemy = FindObjectsOfType<EnemyControllerMusicLevel>();
     }
 
     // Update is called once per frame
@@ -44,7 +52,18 @@ public class LightController : MonoBehaviour
         }
         else if(time <= 0)
         {
-            randomInt = Random.Range(0,playerLights.Length);
+            randomInt = Random.Range(0,Lights.Length);
+            holder = randomInt;
+            if (counter <6)
+            {
+                counter++;
+
+            }
+            else
+            {
+                turn = Random.Range(0, 2);
+                counter = 0;
+            }
             time = 5;
             placeHolder = 5;
         }
@@ -52,11 +71,26 @@ public class LightController : MonoBehaviour
         {
             case 0:
                 //enemy turn
+                Lights[randomInt].GetComponent<Renderer>().material.color = Color.red;
+               foreach(EnemyControllerMusicLevel E in enemy)
+                {
+                    if(E.musicBox == Lights[randomInt])
+                    {
+                        E.canMove = true;
+                        break;
+                    }
+                    else
+                    {
+                        E.canMove = false;
+                        break;
+                    }
+                }
                 break;
 
             case 1:
                 //player turn
-                PlayerLightsRandomzied(randomInt);
+                Lights[randomInt].GetComponent<Renderer>().material.color = Color.green;
+            
                 break;
 
             default:
@@ -64,14 +98,4 @@ public class LightController : MonoBehaviour
         }
     }
 
-
-    void PlayerLightsRandomzied(int randomInt)
-    {
-        Debug.Log(playerLights[randomInt]);
-    }
-    void EnemyLightsRandomzied(int randomInt)
-    {
-        Debug.Log(enemyLights[randomInt]);
-
-    }
 }

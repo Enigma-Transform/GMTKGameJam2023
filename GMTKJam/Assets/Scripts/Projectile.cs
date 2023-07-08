@@ -27,8 +27,9 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-//        transform.Translate(Vector3.right * speed*Time.deltaTime);
+        //        transform.Translate(Vector3.right * speed*Time.deltaTime);
 
+        Destroy(this.gameObject, 5f);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -45,6 +46,13 @@ public class Projectile : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<EnemyHealthManager>().TakeDamage(damage);
+            Destroy(this.gameObject);
+
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(damage);
+            Destroy(this.gameObject);
         }
     }
 }

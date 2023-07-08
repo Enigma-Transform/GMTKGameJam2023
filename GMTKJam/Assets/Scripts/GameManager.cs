@@ -10,8 +10,13 @@ public class GameManager : MonoBehaviour
     Enemy enemy;
     [SerializeField]
     CharacterController characterController;
+    [SerializeField]
+    PlayerHealthManager playerHealthManager;
+    [SerializeField]
+    GameObject GameOverPane;
     private void Awake()
     {
+        playerHealthManager = FindObjectOfType<PlayerHealthManager>();
         enemy= FindObjectOfType<Enemy>();
         characterController = FindObjectOfType<CharacterController>();
 
@@ -25,8 +30,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        Debug.Log("time: " + time);
+        if (playerHealthManager.currentHealth <= 0)
+        {
+            GameOver();
+        }
+            time += Time.deltaTime;
+        //Debug.Log("time: " + time);
         if (time >= 30f)
         {
             time = 0;
@@ -34,7 +43,7 @@ public class GameManager : MonoBehaviour
             { 
                 if (enemy.mode == 0)
                 {
-                    Debug.Log("Mode: "+enemy.mode);
+                   // Debug.Log("Mode: "+enemy.mode);
                     enemy.mode = 1;
 
                 }
@@ -44,5 +53,14 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+
+    public void GameOver()
+    {
+        Time.timeScale = 0.05f;
+        
+            GameOverPane.SetActive(true);
+        
     }
 }

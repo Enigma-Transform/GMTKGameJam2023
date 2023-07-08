@@ -7,10 +7,12 @@ public class PlayerHealthManager : MonoBehaviour
     [SerializeField]
     [Range(0,100)]
     int health;
+
+    public int currentHealth;
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHealth = health;
     }
 
     // Update is called once per frame
@@ -23,7 +25,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         if (health > 0)
         {
-            health -= (int)damage;
+            currentHealth -= (int)damage;
         }
     }
 }

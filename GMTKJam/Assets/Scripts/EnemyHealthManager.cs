@@ -7,6 +7,9 @@ public class EnemyHealthManager : MonoBehaviour
     [SerializeField]
     [Range(0,100)]
     int health;
+
+    [SerializeField]
+    bool isArmored;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +24,20 @@ public class EnemyHealthManager : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (health > 0)
+        if (isArmored == false)
         {
-            health -= (int)damage;
+            if (health > 0)
+            {
+                health -=5;
+            }
         }
+        else if(isArmored)
+        {
+            if (health > 0)
+            {
+                health -= (int)damage;
+            }
+        }
+        
     }
 }

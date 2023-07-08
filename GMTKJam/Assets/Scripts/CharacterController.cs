@@ -26,6 +26,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     int powerUpCase;
 
+    [SerializeField]
+    int level;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,14 +58,17 @@ public class CharacterController : MonoBehaviour
 
         MouseAim();
 
-
-        if (Input.GetMouseButtonDown(0))
+        if (level == 1)
         {
-            
+            if (Input.GetMouseButtonDown(0))
+            {
+
                 Shooting();
 
-            
+
+            }
         }
+        
         //Player Movement Inputs
         if (Input.GetKey(KeyCode.W))
         {
