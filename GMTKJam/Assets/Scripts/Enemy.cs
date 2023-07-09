@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-   public int mode=0;
+   public int mode=1;
     [SerializeField]
     Transform target;
 

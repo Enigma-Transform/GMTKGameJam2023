@@ -27,7 +27,7 @@ public class CharacterController : MonoBehaviour
    public int powerUpCase;
 
     [SerializeField]
-    int level;
+    int level = 1;
     // Start is called before the first frame update
 
     [SerializeField]
@@ -124,15 +124,9 @@ public class CharacterController : MonoBehaviour
                 {
                     animator.SetBool("isShooting", true);
 
-                    if (fireRateTime >= nextFireTime)
-                    {
+                  
                         Shooting();
-                        fireRateTime = 0;
-                    }
-
-
-
-
+    
                 }
                 else
                 {
@@ -191,6 +185,7 @@ public class CharacterController : MonoBehaviour
 
     void Shooting()
     {
+        Debug.Log("Shooting");
         if (sizeChangePowerUp)
         {
             Projectile bullet = Instantiate(projectile, spawnPoint.position, transform.rotation);

@@ -19,7 +19,7 @@ public class ButtonsFunctionality : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Training Scene");
+        SceneManager.LoadScene("ShootingReflectingLevel");
     }
 
     public void QuitButton()
