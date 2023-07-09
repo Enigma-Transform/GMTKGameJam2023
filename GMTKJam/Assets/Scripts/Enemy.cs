@@ -17,11 +17,13 @@ public class Enemy : MonoBehaviour
     Rigidbody rb;
 
     Vector3 dir;
-   // [SerializeField]
-   // NavMeshAgent enemyAgent;
-
+    // [SerializeField]
+    // NavMeshAgent enemyAgent;
+    GameManager gameManager;
     private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
+
         //enemyAgent = GetComponent<NavMeshAgent>();
         target = FindObjectOfType<CharacterController>().transform;
         rb = GetComponent<Rigidbody>();
@@ -36,32 +38,35 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        //enemyAgent.SetDestination(target.position);
-        if (target != null)
+        if (gameManager.startGame == true)
         {
+            //enemyAgent.SetDestination(target.position);
+            if (target != null)
+            {
 
-            Vector3 moveToTarget = target.position - transform.position;
-            dir = new Vector3(moveToTarget.x, moveToTarget.y, transform.position.z);
+                Vector3 moveToTarget = target.position - transform.position;
+                dir = new Vector3(moveToTarget.x, moveToTarget.y, transform.position.z);
+            }
+
+
+            switch (mode)
+            {
+                case 0:
+                    //Debug.Log("shooting");
+                    break;
+
+                case 1:
+                    //Debug.Log("reflecting");
+                    break;
+
+
+                default:
+
+                    break;
+
+            }
         }
-
-
-        switch (mode)
-        {
-            case 0:
-                //Debug.Log("shooting");
-                break;
-
-            case 1:
-                //Debug.Log("reflecting");
-                break;
-
-
-            default:
-
-                break;
-
-        }
+       
     }
 
     private void FixedUpdate()

@@ -17,27 +17,33 @@ public class EnemyShooting : MonoBehaviour
     Vector3 target;
 
     float time;
+
+    GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<CharacterController>().transform;
-       
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (time <= 1.5f)
+        if (gameManager.startGame == true)
         {
-            time += Time.deltaTime;
+            if (time <= 1.5f)
+            {
+                time += Time.deltaTime;
+
+            }
+            else if (time >= 1.5f)
+            {
+                time = 0;
+                Shooting();
+            }
 
         }
-        else if (time >= 1.5f)
-        {
-            time = 0;
-            Shooting();
-        }
+       
     }
     void Shooting()
     {

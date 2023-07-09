@@ -10,13 +10,15 @@ public class Projectile : MonoBehaviour
     float speed;
     Rigidbody body;
 
-    [SerializeField]
     [Range(0, 100)]
-    float damage;
+   public float damage;
+
+    CharacterController characterController;
     // Start is called before the first frame update
 
     private void Awake()
     {
+        characterController = FindAnyObjectByType<CharacterController>();
         body = GetComponent<Rigidbody>();
     }
     void Start()
@@ -53,6 +55,17 @@ public class Projectile : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(damage);
             Destroy(this.gameObject);
+        }
+
+        if(collision.gameObject.tag == "Mirror")
+        {
+           if(this.transform.parent == characterController.transform)
+            {
+                if(characterController.dropsPowerUp == true)
+                {
+                    characterController.HPDROP();
+                }
+            }
         }
     }
 }

@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using System.Linq;
+using System;
 
 public class EnemyControllerMusicLevel : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class EnemyControllerMusicLevel : MonoBehaviour
     float speed;
 
     public bool canMove;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -28,23 +30,18 @@ public class EnemyControllerMusicLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindObjectOfType<CharacterController>().transform;
+
     }
 
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
         if(canMove)
         {
             Vector3 moveToTarget = musicBox.transform.position - transform.position;
             dir = new Vector3(moveToTarget.x, moveToTarget.y, transform.position.z);
         }
-        else if (!canMove)
-        {
-            Vector3 moveToPlayer = player.transform.position - transform.position;
-            dir = new Vector3(moveToPlayer.x,moveToPlayer.y,transform.position.z);
-
-        }
+      
 
         
         
@@ -53,7 +50,6 @@ public class EnemyControllerMusicLevel : MonoBehaviour
     private void FixedUpdate()
     {
         MoveToMusicBlock(canMove);
-        ChasePlayer(canMove);
        
     }
 
@@ -77,23 +73,5 @@ public class EnemyControllerMusicLevel : MonoBehaviour
         
     }
 
-    void ChasePlayer(bool canMove)
-    {
-        if (!canMove)
-        {
-            if (Vector3.Distance(dir,player.position) > 0.5f)
-            {
-                Vector2 direction = transform.InverseTransformPoint(player.transform.position);
-                float angle = Mathf.Atan2(direction.y,direction.x) * Mathf.Rad2Deg;
-                transform.Rotate(0,0,angle);
-                rb.velocity = dir * speed;
-
-            }
-            else
-            {
-                rb.velocity = Vector3.zero;
-  
-            }
-        }
-    }
+    
 }

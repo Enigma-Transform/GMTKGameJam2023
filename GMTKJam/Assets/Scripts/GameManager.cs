@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     PlayerHealthManager playerHealthManager;
     [SerializeField]
     GameObject GameOverPane;
+
+    public bool startGame;
     private void Awake()
     {
         playerHealthManager = FindObjectOfType<PlayerHealthManager>();
