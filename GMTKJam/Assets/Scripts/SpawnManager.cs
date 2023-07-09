@@ -18,18 +18,24 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(EnemySpawner());
         
     }
 
-   
 
-    IEnumerator EnemySpawner()
+    private void Update()
     {
-        while (gameManager.startGame==true)
+        if (FindObjectsOfType<Enemy>().Length >= 9)
+        {
+            StopAllCoroutines();
+        }
+    }
+
+    public IEnumerator EnemySpawner()
+    {
+        while (true)
         {
             Instantiate(enemyGO[Random.Range(0, enemyGO.Length)], spawnTransform[Random.Range(0, spawnTransform.Length)].position, Quaternion.identity);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(7f);
         }
     
     }

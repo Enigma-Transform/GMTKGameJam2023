@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     float time;
     [SerializeField]
-    Enemy enemy;
+    List<Enemy> enemy;
     [SerializeField]
     CharacterController characterController;
     [SerializeField]
@@ -19,19 +20,20 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         playerHealthManager = FindObjectOfType<PlayerHealthManager>();
-        enemy= FindObjectOfType<Enemy>();
         characterController = FindObjectOfType<CharacterController>();
 
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+        enemy = FindObjectsOfType<Enemy>().ToList<Enemy>();
+
         if (playerHealthManager.currentHealth <= 0)
         {
             GameOver();
@@ -43,17 +45,23 @@ public class GameManager : MonoBehaviour
             time = 0;
             if(enemy != null)
             { 
-                if (enemy.mode == 0)
+                foreach(Enemy enemy in enemy)
                 {
-                   // Debug.Log("Mode: "+enemy.mode);
-                    enemy.mode = 1;
+                    if (enemy.mode == 0)
+                    {
+                        // Debug.Log("Mode: "+enemy.mode);
+                        enemy.mode = 1;
 
+                    }
+                    else
+                    {
+                        enemy.mode = 0;
+                    }
                 }
-                else
-                {
-                    enemy.mode = 0;
-                }
+               
             }
+
+            characterController.mode = 1;
         }
     }
 

@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     Rigidbody body;
 
     [Range(0, 100)]
-   public float damage;
+   public int damage;
 
     CharacterController characterController;
     // Start is called before the first frame update
@@ -51,9 +51,15 @@ public class Projectile : MonoBehaviour
             Destroy(this.gameObject);
 
         }
+        if (collision.gameObject.tag == "Wall")
+        {
+            Destroy(this.gameObject);
+
+        }
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(damage);
+            Debug.Log("player");
             Destroy(this.gameObject);
         }
 

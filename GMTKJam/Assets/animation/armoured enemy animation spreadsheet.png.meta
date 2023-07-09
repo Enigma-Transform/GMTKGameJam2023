@@ -1,0 +1,1115 @@
+fileFormatVersion: 2
+guid: 2a44b372defe9664c987ed90e5d3f059
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_0
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5669
+        width: 233
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4807a81632e03fe41a1b6f2c3adaeb8e
+      internalID: -1994376543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_1
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 5669
+        width: 272
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2366dba86608340b93bc475c5d59c9
+      internalID: 1500446339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_2
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 5447
+        width: 1278
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cc76af4a14e8147a571c016904b3dd
+      internalID: -170741620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_3
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 5508
+        width: 1278
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29940328d23e4e4083bfdbcdcee767f
+      internalID: -461124930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_4
+      rect:
+        serializedVersion: 2
+        x: 5859
+        y: 5558
+        width: 1282
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46922e6ec101c7e4aaac71182cf1d4e0
+      internalID: -722844392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_5
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 5508
+        width: 1278
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d992e72179ea34647937fde723692ad6
+      internalID: -394423745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_6
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 5447
+        width: 488
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416e68e2258d6ee4b99cd24faef2a820
+      internalID: -1912001685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_7
+      rect:
+        serializedVersion: 2
+        x: 6276
+        y: 5447
+        width: 350
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbf8a8e7f852ac499ffb14f7728f5ae
+      internalID: -1808688909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_8
+      rect:
+        serializedVersion: 2
+        x: 7840
+        y: 5447
+        width: 486
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60d78b272ab749458b663ae7573d1c1
+      internalID: 1739145502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_9
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 4436
+        width: 555
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a3d6dca10045543bb7e1a1647f8969
+      internalID: -1908387523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_10
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 4431
+        width: 143
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabeecc576681a741b3afb4cfef84703
+      internalID: -143333202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_11
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 4436
+        width: 167
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26e142844c3c8643adfdcafa506dbee
+      internalID: 249679832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_12
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 4136
+        width: 1401
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af95b3f6d037373429f57b83b7ea98c8
+      internalID: 600473558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_13
+      rect:
+        serializedVersion: 2
+        x: 4231
+        y: 4136
+        width: 1400
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e386cb3b33ad714aae272a79380b382
+      internalID: 1872662412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_14
+      rect:
+        serializedVersion: 2
+        x: 5826
+        y: 4136
+        width: 1427
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98c347e360038744aeec4c985fa0e8f
+      internalID: -1937150768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_15
+      rect:
+        serializedVersion: 2
+        x: 7446
+        y: 4295
+        width: 596
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ff93a289578ab46bee530917c9bb1e
+      internalID: -1929907035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_16
+      rect:
+        serializedVersion: 2
+        x: 8126
+        y: 4136
+        width: 1428
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852ed86692c4a2d43a68956b56c4dd02
+      internalID: 1929583939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_17
+      rect:
+        serializedVersion: 2
+        x: 9743
+        y: 4136
+        width: 1405
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6c91f0cab8bcf4f8334233c27680bc
+      internalID: -1985089440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_18
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 3269
+        width: 150
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188ce3b69f6fa5c4884a810905fe43e2
+      internalID: -1428420948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_19
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 3487
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a6733f337651549977dc6fb89ef85c
+      internalID: 991673033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_20
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 3214
+        width: 550
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0784b545d746b4b9ecd46a5760471c
+      internalID: 1055305111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_21
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 3264
+        width: 182
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0f45765bf9b27459876b9e405bdbcf
+      internalID: -311491541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_22
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3269
+        width: 161
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941528c682fb7f64da6dc15918015f12
+      internalID: -1792055867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3269
+        width: 72
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7eeaa9678d6d0b4d8c6dd9c93ec4453
+      internalID: 380815669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_24
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 3214
+        width: 439
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1db4aade4675646a2035c4f1153256
+      internalID: -536159652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_25
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 2986
+        width: 1394
+        height: 922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8091c6c2aad0a1146988a70c4484d2d7
+      internalID: 2133478808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_26
+      rect:
+        serializedVersion: 2
+        x: 4203
+        y: 3103
+        width: 1394
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c8a000964cf7940a76275b02f9a7ce
+      internalID: 505371763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_27
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3269
+        width: 71
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd420e39cdabad842bfc5f26fa86d24b
+      internalID: -211809064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_28
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 3264
+        width: 127
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2203d01a2832142af4407d422ea3c3
+      internalID: -739490466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_29
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 3208
+        width: 128
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5eaa1aab2f96a47a289cc12ca8181e
+      internalID: 545406572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_30
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 3264
+        width: 126
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3816bceefd34448950a4829461bb58
+      internalID: -826013278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_31
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 2986
+        width: 560
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e9985c572dd8f44b0c20db1e6ada90
+      internalID: -2009943013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_32
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1936
+        width: 146
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0c2a4ead03db04cbe636f2878bf914
+      internalID: 244477993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_33
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1936
+        width: 473
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b3694ecbb1040409c12ea7a7581378
+      internalID: 1291663796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_34
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1931
+        width: 266
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9401b7559efadc54e9b545c91def781f
+      internalID: -290358565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_35
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 1792
+        width: 1411
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76d4236f8342d7409b8eafd91e94a31
+      internalID: -67326097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_36
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1708
+        width: 681
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987dafb01993ed3449a1e0f0edc95601
+      internalID: -21287458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_37
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 686
+        width: 149
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed82c50dae3503b49badb84e9209d531
+      internalID: 1338300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_38
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 686
+        width: 422
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53405cbb9825804c8d0f970a41dc585
+      internalID: -530262498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_39
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 514
+        width: 1411
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec0f5e9f8d87a24d90e3b8bf62d9b82
+      internalID: -1253124819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_40
+      rect:
+        serializedVersion: 2
+        x: 4237
+        y: 431
+        width: 1355
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9407b7a855482a94daf24bc133b056f1
+      internalID: -986578342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_41
+      rect:
+        serializedVersion: 2
+        x: 5787
+        y: 431
+        width: 1372
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecb1619b246b1c49990df6edf8b954a
+      internalID: 1753881800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_42
+      rect:
+        serializedVersion: 2
+        x: 7354
+        y: 403
+        width: 1327
+        height: 1077
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b18d1d842b6564d86b9f6ac0e6702c
+      internalID: 331188647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armoured enemy animation spreadsheet_43
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 431
+        width: 681
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b483a6400676fc4d98d02d69df94521
+      internalID: 1976747756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e3464272296bdb847bacbcbe6050ec25
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      armoured enemy animation spreadsheet_0: -1994376543
+      armoured enemy animation spreadsheet_1: 1500446339
+      armoured enemy animation spreadsheet_10: -143333202
+      armoured enemy animation spreadsheet_11: 249679832
+      armoured enemy animation spreadsheet_12: 600473558
+      armoured enemy animation spreadsheet_13: 1872662412
+      armoured enemy animation spreadsheet_14: -1937150768
+      armoured enemy animation spreadsheet_15: -1929907035
+      armoured enemy animation spreadsheet_16: 1929583939
+      armoured enemy animation spreadsheet_17: -1985089440
+      armoured enemy animation spreadsheet_18: -1428420948
+      armoured enemy animation spreadsheet_19: 991673033
+      armoured enemy animation spreadsheet_2: -170741620
+      armoured enemy animation spreadsheet_20: 1055305111
+      armoured enemy animation spreadsheet_21: -311491541
+      armoured enemy animation spreadsheet_22: -1792055867
+      armoured enemy animation spreadsheet_23: 380815669
+      armoured enemy animation spreadsheet_24: -536159652
+      armoured enemy animation spreadsheet_25: 2133478808
+      armoured enemy animation spreadsheet_26: 505371763
+      armoured enemy animation spreadsheet_27: -211809064
+      armoured enemy animation spreadsheet_28: -739490466
+      armoured enemy animation spreadsheet_29: 545406572
+      armoured enemy animation spreadsheet_3: -461124930
+      armoured enemy animation spreadsheet_30: -826013278
+      armoured enemy animation spreadsheet_31: -2009943013
+      armoured enemy animation spreadsheet_32: 244477993
+      armoured enemy animation spreadsheet_33: 1291663796
+      armoured enemy animation spreadsheet_34: -290358565
+      armoured enemy animation spreadsheet_35: -67326097
+      armoured enemy animation spreadsheet_36: -21287458
+      armoured enemy animation spreadsheet_37: 1338300136
+      armoured enemy animation spreadsheet_38: -530262498
+      armoured enemy animation spreadsheet_39: -1253124819
+      armoured enemy animation spreadsheet_4: -722844392
+      armoured enemy animation spreadsheet_40: -986578342
+      armoured enemy animation spreadsheet_41: 1753881800
+      armoured enemy animation spreadsheet_42: 331188647
+      armoured enemy animation spreadsheet_43: 1976747756
+      armoured enemy animation spreadsheet_5: -394423745
+      armoured enemy animation spreadsheet_6: -1912001685
+      armoured enemy animation spreadsheet_7: -1808688909
+      armoured enemy animation spreadsheet_8: 1739145502
+      armoured enemy animation spreadsheet_9: -1908387523
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

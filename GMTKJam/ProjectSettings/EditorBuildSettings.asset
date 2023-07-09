@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MusicLevel.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3b761426f24a5614ab1b20e5f1b5748e
+  - enabled: 1
+    path: Assets/Scenes/TrainingScene.unity
+    guid: 6f5ee6ec5d47f88458b8342ee46322fc
+  - enabled: 1
+    path: Assets/Scenes/ShootingReflectingLevel.unity
+    guid: 93c54cbec2eb9744487d61fa1297748b
   m_configObjects: {}

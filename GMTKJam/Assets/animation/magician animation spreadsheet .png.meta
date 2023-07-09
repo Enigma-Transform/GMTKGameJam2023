@@ -1,0 +1,1291 @@
+fileFormatVersion: 2
+guid: 5cbf3e75972cac64b8af7e19cbdc3e0d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magician animation spreadsheet _0
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 9455
+        width: 563
+        height: 1272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a7c62fce0adf4a9a039f4a60f5b25
+      internalID: -87798828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _1
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 9455
+        width: 563
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c12161228bdfe148a3aea3c64ae4bfa
+      internalID: -1761398167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _2
+      rect:
+        serializedVersion: 2
+        x: 4178
+        y: 9455
+        width: 563
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d31fe07eeb5944fabbd4cbd61aec0d
+      internalID: 1444244935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _3
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 9455
+        width: 601
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c93a29094d29c4db07cb8577cc04a2
+      internalID: 540063638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _4
+      rect:
+        serializedVersion: 2
+        x: 6110
+        y: 9737
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5387145f6991e43880ce4f13a61468
+      internalID: -729781608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _5
+      rect:
+        serializedVersion: 2
+        x: 6135
+        y: 9444
+        width: 562
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e2c9845ae64d14dbd68d1a96e5774c
+      internalID: 692282861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _6
+      rect:
+        serializedVersion: 2
+        x: 7081
+        y: 9737
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0e20cae924a944fb29a2f49e955433
+      internalID: -335015628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _7
+      rect:
+        serializedVersion: 2
+        x: 7107
+        y: 9444
+        width: 568
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a44aae0886c4c54d907ac2156b58029
+      internalID: 1879607836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _8
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 9455
+        width: 213
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540b26e3424ff6d43b4f9781fa887b7c
+      internalID: -1249704699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _9
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 9455
+        width: 245
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f481956067e92498d2cdf9f01068b7
+      internalID: -1421665863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _10
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 7681
+        width: 207
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a479597d8aafe254598d9313662b40a2
+      internalID: 16672877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _11
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 7685
+        width: 410
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498c81f787605214786d0c9dac84b5c4
+      internalID: 2050429829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _12
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 7685
+        width: 661
+        height: 1240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b06b90a20e2244c8b85eeca5cf0307
+      internalID: 455048334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _13
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 7685
+        width: 737
+        height: 1245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a0ab8fa1486ba449822d79129fd687
+      internalID: 2097151434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _14
+      rect:
+        serializedVersion: 2
+        x: 4274
+        y: 7685
+        width: 1057
+        height: 1262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7142140ec13047746a138c49991c8ef8
+      internalID: -1771544944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _15
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 7718
+        width: 950
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d770c1c66e1ee4eb427f519c614d12
+      internalID: 523294719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _16
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 7696
+        width: 874
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc4f9fd4f91fa64185b1e8df069bc19
+      internalID: -805996003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _17
+      rect:
+        serializedVersion: 2
+        x: 8107
+        y: 7696
+        width: 956
+        height: 1273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77720b156717da54fb8b4f060992b11f
+      internalID: 504946494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _18
+      rect:
+        serializedVersion: 2
+        x: 9380
+        y: 7696
+        width: 727
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1f6e3d9c0a2a34db47a69aa030423a
+      internalID: -867655938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _19
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 5598
+        width: 737
+        height: 1270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2784ff4157362544838cc6e2ea68aed
+      internalID: -1827339026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _20
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 5598
+        width: 656
+        height: 1270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7f71c00eec993479042b987177fbb2
+      internalID: -534950853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _21
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 5559
+        width: 568
+        height: 1268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c837f9c51f477e54faf86d3feaa2e837
+      internalID: 964336704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _22
+      rect:
+        serializedVersion: 2
+        x: 5272
+        y: 6349
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61860be80c1e212488a0ceb8ef5ca1c2
+      internalID: -704836216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _23
+      rect:
+        serializedVersion: 2
+        x: 5757
+        y: 5546
+        width: 617
+        height: 1259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce414584943cb34aa06309c3c4e3aa6
+      internalID: -41436839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _24
+      rect:
+        serializedVersion: 2
+        x: 6381
+        y: 6158
+        width: 381
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e99ff662bb9734594f784f08f85b55
+      internalID: 401686078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _25
+      rect:
+        serializedVersion: 2
+        x: 6910
+        y: 5546
+        width: 618
+        height: 1259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e8e9bc521a49446bae1a7152be60c6
+      internalID: 56571638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _26
+      rect:
+        serializedVersion: 2
+        x: 7534
+        y: 6158
+        width: 379
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49baa4de009d8b046b51093d0aac42e2
+      internalID: 1361504698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 5971
+        width: 590
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f9153c89e837245ba286e49b2c311b
+      internalID: -2144338442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _28
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 5971
+        width: 383
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6b1a5276ef3b749898d6c39e4f228d
+      internalID: 296289196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _29
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 4195
+        width: 143
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad07b7ba5bdf93f46a7437a3a431b610
+      internalID: 1223231859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _30
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 4195
+        width: 475
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771e6757be7414c40b915da266c196b9
+      internalID: 1615936374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _31
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 4194
+        width: 268
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94db864d4fa19841a82428395e508f9
+      internalID: -1149833886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _32
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 4177
+        width: 546
+        height: 1268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9823baf6dddf84683bfcd9401f7e2a
+      internalID: 1683201458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _33
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 4177
+        width: 541
+        height: 1268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc406a9ce242f4045899d87f47c8baa2
+      internalID: 1292867314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _34
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 2415
+        width: 142
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeabaab4c45cf2741b6491635e50e757
+      internalID: -624300894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _35
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2415
+        width: 421
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd3c3cf9122e9f4cb656c30490656f9
+      internalID: 1948058677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _36
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2401
+        width: 606
+        height: 1311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cd76fc67771c84182d708a660241d4
+      internalID: 1888067555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _37
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 2390
+        width: 545
+        height: 1142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fe84c41588eed4eae301b47193148f
+      internalID: 813562686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _38
+      rect:
+        serializedVersion: 2
+        x: 4446
+        y: 2407
+        width: 819
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a26263bf790dbb43a8a0dc5e9cb55aa
+      internalID: -2053570026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _39
+      rect:
+        serializedVersion: 2
+        x: 5724
+        y: 2407
+        width: 1317
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e129f853af7c9ca4baa2fdb317681224
+      internalID: -377664182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 425
+        width: 141
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd99d818accbb44093cf3baec84db54
+      internalID: 1998887395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _41
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 425
+        width: 71
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfb19c398cb41b468427d45239bf073
+      internalID: -191175608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _42
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 423
+        width: 126
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512659f82a3b5924794601eef6f34eaa
+      internalID: -2113996305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _43
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 425
+        width: 147
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f35fa3061d800e47a91ded0e1987bc6
+      internalID: -1818073301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _44
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 423
+        width: 273
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cede90bf0ca1cf49964fcfaf9da541c
+      internalID: -2056734078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _45
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 423
+        width: 164
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50af939ce15fffb4cb193a906a938793
+      internalID: 1014249861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _46
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 425
+        width: 147
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce5032149aad4b42a8d58d4050e106d
+      internalID: 2002617121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _47
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 423
+        width: 148
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f38c3e56d0dfb45913a89930d0cf0f
+      internalID: -325121821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _48
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 425
+        width: 262
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ad4d15e43ed5c409f25b3b96feadf1
+      internalID: -567259954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _49
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 396
+        width: 738
+        height: 1322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ce91f6426206a45b20cd124339be90
+      internalID: -844226755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _50
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 423
+        width: 596
+        height: 1323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b93a2dc0096764bacfe5a39c87bddd
+      internalID: 1676795860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magician animation spreadsheet _51
+      rect:
+        serializedVersion: 2
+        x: 4615
+        y: 424
+        width: 639
+        height: 1316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee8ff4815ffc62469a3dfa8562249f3
+      internalID: -335526656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 20c4f7d545baa93489cb856c9dd1cbb3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      magician animation spreadsheet _0: -87798828
+      magician animation spreadsheet _1: -1761398167
+      magician animation spreadsheet _10: 16672877
+      magician animation spreadsheet _11: 2050429829
+      magician animation spreadsheet _12: 455048334
+      magician animation spreadsheet _13: 2097151434
+      magician animation spreadsheet _14: -1771544944
+      magician animation spreadsheet _15: 523294719
+      magician animation spreadsheet _16: -805996003
+      magician animation spreadsheet _17: 504946494
+      magician animation spreadsheet _18: -867655938
+      magician animation spreadsheet _19: -1827339026
+      magician animation spreadsheet _2: 1444244935
+      magician animation spreadsheet _20: -534950853
+      magician animation spreadsheet _21: 964336704
+      magician animation spreadsheet _22: -704836216
+      magician animation spreadsheet _23: -41436839
+      magician animation spreadsheet _24: 401686078
+      magician animation spreadsheet _25: 56571638
+      magician animation spreadsheet _26: 1361504698
+      magician animation spreadsheet _27: -2144338442
+      magician animation spreadsheet _28: 296289196
+      magician animation spreadsheet _29: 1223231859
+      magician animation spreadsheet _3: 540063638
+      magician animation spreadsheet _30: 1615936374
+      magician animation spreadsheet _31: -1149833886
+      magician animation spreadsheet _32: 1683201458
+      magician animation spreadsheet _33: 1292867314
+      magician animation spreadsheet _34: -624300894
+      magician animation spreadsheet _35: 1948058677
+      magician animation spreadsheet _36: 1888067555
+      magician animation spreadsheet _37: 813562686
+      magician animation spreadsheet _38: -2053570026
+      magician animation spreadsheet _39: -377664182
+      magician animation spreadsheet _4: -729781608
+      magician animation spreadsheet _40: 1998887395
+      magician animation spreadsheet _41: -191175608
+      magician animation spreadsheet _42: -2113996305
+      magician animation spreadsheet _43: -1818073301
+      magician animation spreadsheet _44: -2056734078
+      magician animation spreadsheet _45: 1014249861
+      magician animation spreadsheet _46: 2002617121
+      magician animation spreadsheet _47: -325121821
+      magician animation spreadsheet _48: -567259954
+      magician animation spreadsheet _49: -844226755
+      magician animation spreadsheet _5: 692282861
+      magician animation spreadsheet _50: 1676795860
+      magician animation spreadsheet _51: -335526656
+      magician animation spreadsheet _6: -335015628
+      magician animation spreadsheet _7: 1879607836
+      magician animation spreadsheet _8: -1249704699
+      magician animation spreadsheet _9: -1421665863
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

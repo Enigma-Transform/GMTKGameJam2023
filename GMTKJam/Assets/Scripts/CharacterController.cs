@@ -42,7 +42,7 @@ public class CharacterController : MonoBehaviour
     public bool dropsPowerUp;
     bool sizeChangePowerUp;
 
-    
+    public int mode;
     Vector3 scaleProjectile;
 
     [SerializeField]
@@ -50,10 +50,17 @@ public class CharacterController : MonoBehaviour
 
     PlayerHealthManager playerHealthManager;
     GameManager gameManager;
+    SpawnManager spawnManager;
+
+    public Animator animator;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         gameManager =FindObjectOfType<GameManager>();
+        spawnManager = FindObjectOfType<SpawnManager>();
+        animator = GetComponent<Animator>();
+        playerHealthManager = GetComponent<PlayerHealthManager>();
     }
     void Start()
     {
@@ -103,7 +110,7 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
 
-
+        animator.SetFloat("playerHealth", playerHealthManager.currentHealth);
 
         fireRateTime += Time.deltaTime; 
         float nextFireTime = 1 / fireRate;
@@ -111,15 +118,30 @@ public class CharacterController : MonoBehaviour
 
         if (level == 1)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (mode == 1)
             {
-                if(fireRateTime>=nextFireTime)
+                if (Input.GetMouseButtonDown(0))
+                {
+                    animator.SetBool("isShooting", true);
 
-                Shooting();
-                fireRateTime = 0;
+                    if (fireRateTime >= nextFireTime)
+                    {
+                        Shooting();
+                        fireRateTime = 0;
+                    }
 
+
+
+
+                }
+                else
+                {
+                    animator.SetBool("isShooting", false);
+
+                }
 
             }
+            
         }
        
         
@@ -129,22 +151,42 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
+            animator.SetBool("isWalking",true);
+            rb.velocity = transform.up * speed;
+
+        }
+       else if (Input.GetKey(KeyCode.D))
+        {
+            animator.SetBool("isWalking", true);
             rb.velocity = transform.right * speed;
+
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            animator.SetBool("isWalking", true);
+            rb.velocity = -transform.right * speed;
+
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            animator.SetBool("isWalking", true);
+            rb.velocity = -transform.up * speed;
 
         }
         else if(powerUpCase!=6)
         {
             rb.velocity = Vector3.zero;
+            animator.SetBool("isWalking", false);
         }
     }
 
 
     void MouseAim()
     {
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - spawnPoint.transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = rotation;
+        spawnPoint.transform.rotation = rotation;
     }
 
     void Shooting()
@@ -170,6 +212,7 @@ public class CharacterController : MonoBehaviour
         if (other.gameObject.tag == "Abilitie")
         {
             gameManager.startGame = true;
+            StartCoroutine(spawnManager.EnemySpawner());
             Destroy(other.gameObject);
         }
         

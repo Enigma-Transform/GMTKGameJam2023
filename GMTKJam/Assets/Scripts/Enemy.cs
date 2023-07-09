@@ -20,6 +20,9 @@ public class Enemy : MonoBehaviour
     // [SerializeField]
     // NavMeshAgent enemyAgent;
     GameManager gameManager;
+
+    SpriteRenderer spriteRenderer;
+    
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -27,6 +30,7 @@ public class Enemy : MonoBehaviour
         //enemyAgent = GetComponent<NavMeshAgent>();
         target = FindObjectOfType<CharacterController>().transform;
         rb = GetComponent<Rigidbody>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
     void Start()
@@ -46,6 +50,16 @@ public class Enemy : MonoBehaviour
 
                 Vector3 moveToTarget = target.position - transform.position;
                 dir = new Vector3(moveToTarget.x, moveToTarget.y, transform.position.z);
+
+                if (dir.x < 0)
+                {
+                    spriteRenderer.flipX = false;
+                }
+                else if(dir.x > 0)
+                {
+                    spriteRenderer.flipX = true;
+
+                }
             }
 
 
@@ -56,7 +70,7 @@ public class Enemy : MonoBehaviour
                     break;
 
                 case 1:
-                    //Debug.Log("reflecting");
+                   // Debug.Log("reflecting");
                     break;
 
 

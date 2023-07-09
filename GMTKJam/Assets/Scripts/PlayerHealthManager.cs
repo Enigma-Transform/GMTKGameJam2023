@@ -21,11 +21,11 @@ public class PlayerHealthManager : MonoBehaviour
         
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         if (health > 0)
         {
-            currentHealth -= (int)damage;
+            currentHealth -= damage;
         }
     }
 }

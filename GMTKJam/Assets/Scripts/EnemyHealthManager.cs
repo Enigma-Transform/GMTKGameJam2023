@@ -22,7 +22,7 @@ public class EnemyHealthManager : MonoBehaviour
         
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         if (isArmored == false)
         {
@@ -35,7 +35,7 @@ public class EnemyHealthManager : MonoBehaviour
         {
             if (health > 0)
             {
-                health -= (int)damage;
+                health -= damage;
             }
         }
         
