@@ -2,35 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Pathfinding;
 public class Enemy : MonoBehaviour
 {
    public int mode=1;
     [SerializeField]
     Transform target;
 
+    AIDestinationSetter destinationSetter;
+    AIPath AIPath;
     [SerializeField]
     [Range(0, 100)]
     float speed;
 
-    [SerializeField]
-    Rigidbody rb;
-
-    Vector3 dir;
-    // [SerializeField]
-    // NavMeshAgent enemyAgent;
     GameManager gameManager;
 
     SpriteRenderer spriteRenderer;
     
     private void Awake()
     {
+       
         gameManager = FindObjectOfType<GameManager>();
+        destinationSetter =GetComponent<AIDestinationSetter>();
 
-        //enemyAgent = GetComponent<NavMeshAgent>();
         target = FindObjectOfType<CharacterController>().transform;
-        rb = GetComponent<Rigidbody>();
+
+       // rb = GetComponent<Rigidbody>();
+
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        destinationSetter.target = target;
 
     }
     void Start()
@@ -42,6 +43,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (gameManager.startGame == true)
         {
             //enemyAgent.SetDestination(target.position);
@@ -79,14 +81,14 @@ public class Enemy : MonoBehaviour
                     break;
 
             }
-        }
+        }*/
+
        
     }
 
     private void FixedUpdate()
     {
         
-            rb.velocity = dir * speed;
             
         
     }

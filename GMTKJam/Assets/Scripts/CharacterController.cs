@@ -37,7 +37,7 @@ public class CharacterController : MonoBehaviour
     GameObject pickedUpObject;
 
     [SerializeField]
-    Rigidbody rb;
+    Rigidbody2D rb;
 
     public bool dropsPowerUp;
     bool sizeChangePowerUp;
@@ -56,7 +56,7 @@ public class CharacterController : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         gameManager =FindObjectOfType<GameManager>();
         spawnManager = FindObjectOfType<SpawnManager>();
         animator = GetComponent<Animator>();
@@ -197,7 +197,7 @@ public class CharacterController : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "PowerUp")
         {
@@ -206,7 +206,8 @@ public class CharacterController : MonoBehaviour
 
         if (other.gameObject.tag == "Abilitie")
         {
-            gameManager.startGame = true;
+            //Debug.Log("abiliti");
+           // gameManager.startGame = true;
             StartCoroutine(spawnManager.EnemySpawner());
             Destroy(other.gameObject);
         }
