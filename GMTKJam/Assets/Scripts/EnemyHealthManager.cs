@@ -19,25 +19,21 @@ public class EnemyHealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void TakeDamage(int damage)
     {
-        if (isArmored == false)
-        {
-            if (health > 0)
-            {
-                health -=5;
-            }
-        }
-        else if(isArmored)
-        {
+       
+       
             if (health > 0)
             {
                 health -= damage;
             }
-        }
+        
         
     }
 }

@@ -33,10 +33,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     int layerIndex;
 
-    [SerializeField]
-    GameObject pickedUpObject;
-
-    [SerializeField]
+  
     Rigidbody2D rb;
 
     public bool dropsPowerUp;
@@ -52,8 +49,14 @@ public class CharacterController : MonoBehaviour
     GameManager gameManager;
     SpawnManager spawnManager;
 
-    public Animator animator;
+    Animator animator;
 
+   public GameObject shield;
+    public bool shieldActive;
+
+    [SerializeField]
+    [Range(0, 100)]
+    public int shieldHealth;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -65,7 +68,7 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         layerIndex = LayerMask.NameToLayer("PickUps");
-
+        mode = gameManager.playerMode;
         switch (powerUpCase)
         {
             case 1:
@@ -109,6 +112,12 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (shieldHealth <= 0)
+        {
+            shieldActive = false;
+            shield.SetActive(false);
+        }
+        mode = gameManager.playerMode;
 
         animator.SetFloat("playerHealth", playerHealthManager.currentHealth);
 
@@ -116,10 +125,14 @@ public class CharacterController : MonoBehaviour
         float nextFireTime = 1 / fireRate;
         MouseAim();
 
+        
+
         if (level == 1)
         {
-            if (mode == 1)
+            if (mode == 0)
             {
+                shieldActive = false;
+                shield.SetActive(false);
                 if (Input.GetMouseButtonDown(0))
                 {
                     animator.SetBool("isShooting", true);
@@ -128,13 +141,15 @@ public class CharacterController : MonoBehaviour
                         Shooting();
     
                 }
-                else
+                else if(Input.GetMouseButtonUp(0))
                 {
                     animator.SetBool("isShooting", false);
 
                 }
 
             }
+            
+            
             
         }
        
@@ -188,12 +203,11 @@ public class CharacterController : MonoBehaviour
         Debug.Log("Shooting");
         if (sizeChangePowerUp)
         {
-            Projectile bullet = Instantiate(projectile, spawnPoint.position, transform.rotation);
+            Projectile bullet = Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
             bullet.transform.SetParent(this.gameObject.transform);
             bullet.transform.localScale = scaleProjectile;
         }
-        Instantiate(projectile,spawnPoint.position,transform.rotation);
-        spawned = true;
+        Instantiate(projectile,spawnPoint.position,spawnPoint.rotation);
     }
 
 
@@ -206,12 +220,28 @@ public class CharacterController : MonoBehaviour
 
         if (other.gameObject.tag == "Abilitie")
         {
-            //Debug.Log("abiliti");
-           // gameManager.startGame = true;
+            Debug.Log("abiliti");
+            gameManager.startGame = true;
             StartCoroutine(spawnManager.EnemySpawner());
             Destroy(other.gameObject);
         }
-        
+        if (other.gameObject.tag == "Mirror")
+        {
+            if (mode == 1)
+            {
+                    shieldHealth = 3;
+               
+                    shieldActive = true;
+                    shield.SetActive(true);
+                    //Debug.Log("mirror");
+
+                Destroy(other.gameObject);
+                
+                
+            }
+           
+        }
+
     }
 
     public void HPDROP()

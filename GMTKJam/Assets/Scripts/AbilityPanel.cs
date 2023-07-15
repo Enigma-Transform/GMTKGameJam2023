@@ -22,7 +22,8 @@ public class AbilityPanel : MonoBehaviour
         for (int j = 0; j <= 2; j++)
         {
              m_abilityPrefabs.GetComponent<SpriteRenderer>().sprite = abilityNo[j].abilitySprite;
-            Instantiate(m_abilityPrefabs, new Vector3(j*2.9f , transform.position.y, transform.position.z), Quaternion.identity);
+           GameObject abilities=  Instantiate(m_abilityPrefabs, new Vector3(j*2.9f , transform.position.y, transform.position.z), Quaternion.identity);
+            abilities.transform.SetParent(this.transform);
         }
             // Make the objects collidable.
         

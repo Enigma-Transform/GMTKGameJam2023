@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    [Range(0, 100)]
+    int switchTime;
+
+    public int playerMode=0,enemyMode=1;
     [SerializeField]
     float time;
     [SerializeField]
@@ -16,12 +24,26 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     GameObject GameOverPane;
 
+    [SerializeField]
+    GameObject abilityPanel;
     public bool startGame;
+
+    public int mode=0;
+
+    [SerializeField]
+    TextMeshProUGUI timerText;
+
+    [SerializeField]
+    Slider slider;
+
+    [SerializeField]
+    int round,noOfRounds;
     private void Awake()
     {
         playerHealthManager = FindObjectOfType<PlayerHealthManager>();
         characterController = FindObjectOfType<CharacterController>();
-
+        slider.maxValue = playerHealthManager.health;
+        slider.value = slider.maxValue;
     }
     // Start is called before the first frame update
     void Start()
@@ -32,37 +54,47 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemy = FindObjectsOfType<Enemy>().ToList<Enemy>();
+        slider.value = playerHealthManager.currentHealth;
+        if (round <= noOfRounds)
+        {
+            if (startGame)
+            {
+                timerText.text = time.ToString("00");
+                abilityPanel.SetActive(false);
 
-        if (playerHealthManager.currentHealth <= 0)
-        {
-            GameOver();
-        }
-            time += Time.deltaTime;
-        //Debug.Log("time: " + time);
-        if (time >= 30f)
-        {
-            time = 0;
-            if(enemy != null)
-            { 
-                foreach(Enemy enemy in enemy)
+                if (playerHealthManager.currentHealth <= 0)
                 {
-                    if (enemy.mode == 0)
-                    {
-                        // Debug.Log("Mode: "+enemy.mode);
-                        enemy.mode = 1;
+                    GameOver();
+                }
+                if (time >= switchTime)
+                {
+                    round += 1;
+                    time = 0;
 
-                    }
-                    else
+                    if (playerMode == 0 && enemyMode == 1)
                     {
-                        enemy.mode = 0;
+                        playerMode = 1;
+                        enemyMode = 0;
+                    }
+                    else if (playerMode == 1 && enemyMode == 0)
+                    {
+                        enemyMode = 1;
+                        playerMode = 0;
                     }
                 }
-               
+                else
+                {
+                    time += Time.deltaTime;
+                }
             }
 
-            characterController.mode = 1;
         }
+        else if(playerHealthManager.currentHealth>0 &&round>=noOfRounds)
+        {
+            //SceneManager.LoadScene("MusicLevel");
+        }
+        
+        
     }
 
 

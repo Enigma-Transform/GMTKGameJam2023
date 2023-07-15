@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    [SerializeField]
     [Range(0,100)]
-    int health;
+    public int health;
 
     public int currentHealth;
     // Start is called before the first frame update

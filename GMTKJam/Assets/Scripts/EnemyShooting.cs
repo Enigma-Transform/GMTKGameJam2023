@@ -6,10 +6,10 @@ public class EnemyShooting : MonoBehaviour
 {
     [SerializeField]
     Transform player;
-    bool spawned;
 
+    public bool canShoot;
     [SerializeField]
-    Projectile projectile;
+    EnemyProjectile projectile;
 
     [SerializeField]
     Transform spawnPoint;
@@ -39,19 +39,18 @@ public class EnemyShooting : MonoBehaviour
 
         spawnPoint.transform.Rotate(0,0,angle); 
 
-        if (gameManager.startGame == true)
+        if (canShoot)
         {
-            if(enemy.mode == 0)
-            {
+            
                 if (time <= 1.5f)
                 {
                     time += Time.deltaTime;
-                    animator.SetBool("isShooting", false);
+                   // animator.SetBool("isShooting", false);
 
                 }
                 else if (time >= 1.5f)
                 {
-                    animator.SetBool("isShooting", true);
+                    //animator.SetBool("isShooting", true);
                     time = 0;
                     Shooting();
                 }
@@ -60,7 +59,7 @@ public class EnemyShooting : MonoBehaviour
 
         }
        
-    }
+    
     void Shooting()
     {
         Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);

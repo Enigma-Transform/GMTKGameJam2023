@@ -9,6 +9,7 @@ TagManager:
   - Mirror
   - Abilitie
   - Wall
+  - Enemy
   layers:
   - Default
   - TransparentFX
