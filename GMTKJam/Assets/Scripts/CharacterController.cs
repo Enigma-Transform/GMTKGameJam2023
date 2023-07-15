@@ -218,13 +218,6 @@ public class CharacterController : MonoBehaviour
             powerUpCase= other.GetComponent<PowerUps>().powerUpSelected;
         }
 
-        if (other.gameObject.tag == "Abilitie")
-        {
-            Debug.Log("abiliti");
-            gameManager.startGame = true;
-            StartCoroutine(spawnManager.EnemySpawner());
-            Destroy(other.gameObject);
-        }
         if (other.gameObject.tag == "Mirror")
         {
             if (mode == 1)

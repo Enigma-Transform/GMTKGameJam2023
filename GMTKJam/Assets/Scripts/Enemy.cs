@@ -80,7 +80,7 @@ public class Enemy : MonoBehaviour
 
                     if (isShieldActive == false)
                     {
-                        if (shield == null)
+                        if (GameObject.FindGameObjectWithTag("Mirror").transform!=null)
                         {
                             shield = GameObject.FindGameObjectWithTag("Mirror").transform;
 
@@ -123,7 +123,6 @@ public class Enemy : MonoBehaviour
                 isShieldActive = true;
                 shieldHealth = 3;
                 shieldGO.SetActive(true);
-                Destroy(collision.gameObject);
             }
             
         }

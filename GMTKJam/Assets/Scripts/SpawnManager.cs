@@ -11,9 +11,15 @@ public class SpawnManager : MonoBehaviour
     GameObject[] enemyGO;
 
     GameManager gameManager;
+
+    [SerializeField]
+    [Range(0,100)]
+    float spawnTime;
+
+    public bool rountineStarted;
     private void Awake()
     {
-        gameManager = GetComponent<GameManager>();
+        gameManager =GameObject.FindObjectOfType<GameManager>();
     }
     // Start is called before the first frame update
     void Start()
@@ -28,14 +34,18 @@ public class SpawnManager : MonoBehaviour
         {
             StopAllCoroutines();
         }
+        
     }
 
     public IEnumerator EnemySpawner()
     {
-        while (true)
+        rountineStarted = true;
+
+
+        while (gameManager.startGame)
         {
             Instantiate(enemyGO[Random.Range(0, enemyGO.Length)], spawnTransform[Random.Range(0, spawnTransform.Length)].position, Quaternion.identity);
-            yield return new WaitForSeconds(7f);
+            yield return new WaitForSeconds(spawnTime);
         }
     
     }

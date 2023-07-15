@@ -4,6 +4,8 @@ using UnityEditor;
 using System.Linq;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 public class AbilityPanel : MonoBehaviour
 {
@@ -13,17 +15,20 @@ public class AbilityPanel : MonoBehaviour
     List<AbilitiesScriptableObject> m_Abilites;
     [SerializeField]
     GameObject m_abilityPrefabs;
+
+    public GameObject[] abilityPrefab;
     // Start is called before the first frame update
     void Start()
     {
         List<AbilitiesScriptableObject> abilityNo = m_Abilites.OrderBy(i => Guid.NewGuid()).ToList();
 
 
-        for (int j = 0; j <= 2; j++)
+        for (int j = 0; j <= abilityPrefab.Length-1; j++)
         {
-             m_abilityPrefabs.GetComponent<SpriteRenderer>().sprite = abilityNo[j].abilitySprite;
-           GameObject abilities=  Instantiate(m_abilityPrefabs, new Vector3(j*2.9f , transform.position.y, transform.position.z), Quaternion.identity);
-            abilities.transform.SetParent(this.transform);
+            abilityPrefab[j].GetComponent<Image>().sprite = abilityNo[j].abilitySprite;
+            abilityPrefab[j].GetComponent<AbilityButton>().abilityNo = abilityNo[j].abilityNumber;
+            // GameObject abilities=  Instantiate(abilityPrefab, new Vector3(j*2.9f , transform.position.y, transform.position.z), Quaternion.identity);
+            //abilities.transform.SetParent(this.transform);
         }
             // Make the objects collidable.
         
@@ -33,6 +38,7 @@ public class AbilityPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         
     }
 }

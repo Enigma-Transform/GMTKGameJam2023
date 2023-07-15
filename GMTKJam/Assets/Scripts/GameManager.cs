@@ -38,10 +38,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     int round,noOfRounds;
+    SpawnManager spawnManager;
     private void Awake()
     {
+        spawnManager = GameObject.FindObjectOfType<SpawnManager>();
         playerHealthManager = FindObjectOfType<PlayerHealthManager>();
         characterController = FindObjectOfType<CharacterController>();
+        
         slider.maxValue = playerHealthManager.health;
         slider.value = slider.maxValue;
     }
@@ -59,6 +62,10 @@ public class GameManager : MonoBehaviour
         {
             if (startGame)
             {
+                if (spawnManager.rountineStarted == false)
+                {
+                    StartCoroutine(spawnManager.EnemySpawner());
+                }
                 timerText.text = time.ToString("00");
                 abilityPanel.SetActive(false);
 
